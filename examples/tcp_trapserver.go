@@ -6,7 +6,7 @@ import (
 	"time"
 
 	log "github.com/sirupsen/logrus"
-	gosnmp "github.com/soniah/gosnmp"
+	gosnmp "github.com/slayercat/gosnmp"
 )
 
 func main() {

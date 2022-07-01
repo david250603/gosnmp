@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	g "github.com/soniah/gosnmp"
+	g "github.com/slayercat/gosnmp"
 )
 
 func main() {

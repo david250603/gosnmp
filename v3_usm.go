@@ -125,7 +125,7 @@ func (sp *UsmSecurityParameters) GenKeys() {
 			}
 		}
 		if sp.PrivacyProtocol > NoPriv && len(sp.PrivacyKey) == 0 {
-			sp.PrivacyKey, err = genlocalkey(sp.AuthenticationProtocol,
+			sp.PrivacyKey, err = genlocalPrivKey(sp.PrivacyProtocol, sp.AuthenticationProtocol,
 				sp.PrivacyPassphrase,
 				sp.AuthoritativeEngineID)
 			if err != nil {
